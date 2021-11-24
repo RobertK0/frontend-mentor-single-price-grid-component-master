@@ -1,0 +1,154 @@
+* {
+  font-family: "Karla", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  width: 83%;
+  margin: 0 auto;
+  box-shadow: 0 10px 10px 15px #a5c0d12f;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+div {
+  padding: 25px 25px;
+}
+
+/* TAB 1 */
+
+.tab-1 {
+  grid-row: 1;
+  background-color: white;
+}
+
+.tab-1 h2:first-of-type {
+  color: #2ab2af;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.tab-1 h3 {
+  color: #c0df34;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+  color: #abaeb5;
+  margin-bottom: 10px;
+}
+
+/* TAB 2 */
+
+.tab-2 {
+  grid-row: 2;
+  background-color: #2ab2af;
+  color: #e5eff5;
+}
+
+.subscription-type {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.tab-2 p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.price {
+  padding: 0;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+strong {
+  font-size: 2rem;
+  padding-right: 10px;
+}
+
+.tab-2 h3:first-of-type {
+  color: #e5eff5;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.sign-up-btn {
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.075);
+  padding: 15px;
+  color: #e5eff5;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* TAB 3 */
+
+.tab-3 {
+  grid-row: 3;
+  background-color: #4abebd;
+  color: #e5eff5;
+}
+.why-us {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  font-weight: 200;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 44%;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    max-width: 650px;
+  }
+  div {
+    padding: 40px;
+  }
+  .tab-1 {
+    grid-column: span 2;
+  }
+  .tab-1 h2:first-of-type {
+    font-size: 1.475rem;
+  }
+  .tab-1 h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 0.975rem;
+    margin-bottom: 0px;
+  }
+  .tab-3 {
+    grid-row: 2;
+  }
+}
